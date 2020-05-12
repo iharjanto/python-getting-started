@@ -25,7 +25,7 @@ client.on_publish = on_publish
 client.on_subscribe = on_subscribe
 
 
-topic = 'temperatur'
+topic = 'temperature'
 
 # Connect mqtt ke server
 client.username_pw_set('krlahobw', 'NIbqe3aleMsE')
