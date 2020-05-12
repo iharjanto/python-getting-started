@@ -1,5 +1,6 @@
 import paho.mqtt.client as mqtt
 import random
+import time
 # Define event callbacks
 def on_connect(client, userdata, flags, rc):
     print("rc: " + str(rc))
@@ -34,6 +35,7 @@ rc = 0
 while rc == 0:
     data = random.randint(24,32)
     client.publish(topic, data)
+    time.sleep(30)
 
 
 
